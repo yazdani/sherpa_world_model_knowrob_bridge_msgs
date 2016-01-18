@@ -7,6 +7,8 @@ project(sherpa_world_model_knowrob_bridge_msgs)
 find_package(catkin REQUIRED
    message_generation   
    std_msgs
+   geographic_msgs
+   geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -66,6 +68,7 @@ find_package(catkin REQUIRED
  generate_messages(
    DEPENDENCIES
    std_msgs  # Or other packages containing msgs
+   geographic_msgs
  )
 
 ################################################
