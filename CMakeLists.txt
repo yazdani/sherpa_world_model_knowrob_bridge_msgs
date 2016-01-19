@@ -9,6 +9,7 @@ find_package(catkin REQUIRED
    std_msgs
    geographic_msgs
    geometry_msgs
+   uuid_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -67,8 +68,9 @@ find_package(catkin REQUIRED
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
-   std_msgs  # Or other packages containing msgs
+   std_msgs 
    geographic_msgs
+   uuid_msgs
  )
 
 ################################################
